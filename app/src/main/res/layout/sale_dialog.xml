@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintDimensionRatio="@android:string/dialog_alert_title"
+    app:layout_constraintHeight_default="wrap"
+    app:layout_constraintHeight_max="wrap"
+    app:layout_constraintHeight_min="wrap"
+    app:layout_constraintWidth_default="spread"
+    app:layout_constraintWidth_max="wrap"
+    app:layout_constraintWidth_min="wrap">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="هل انت متاكد ؟"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/noButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="لا"
+        app:layout_constraintBaseline_creator="@android:integer/config_longAnimTime"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yesButton"
+        app:layout_constraintStart_toStartOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/yesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="نعم"
+        app:layout_constraintBaseline_creator="@android:integer/config_longAnimTime"
+        app:layout_constraintStart_toEndOf="@+id/noButton"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+</android.support.constraint.ConstraintLayout>

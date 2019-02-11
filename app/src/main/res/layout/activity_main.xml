@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLayout"
+        >
+
+        <Button
+            android:id="@+id/btnUpDirectory"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:text="Back" />
+
+        <Button
+            android:id="@+id/btnViewSDCard"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="21dp"
+            android:text="Memory" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="77dp"
+            android:onClick="gostatistics"
+            android:text="احصاء" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="52dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="81dp"
+            android:onClick="gotodoogle"
+            android:text="google" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="gogo"
+            android:text="Button" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_below="@+id/relLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvInternalStorage"></ListView>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="تقرير يومي" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="ترحيل يومي " />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="المصروفات اليومية " />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="المعلقات  " />
+        <item
+            android:id="@+id/nav_genral"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="اليومية العامة   " />
+        <item
+            android:id="@+id/nav_dibet"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="عرض الديون   " />
+    </group>
+
+    <item android:title="media">
+        <menu>
+            <item
+                android:id="@+id/media_player"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="استيراد ملف XEL" />
+            <item
+                android:id="@+id/recorder"
+                android:icon="@drawable/ic_menu_send"
+                android:title="تصدير ملف XEL " />
+        </menu>
+    </item>
+    <item android:title="إعدادات ">
+        <menu>
+            <item
+                android:id="@+id/chang_table"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="تعديل الجدول " />
+            <item
+                android:id="@+id/set_recorder"
+                android:icon="@drawable/ic_menu_send"
+                android:title="  عرض الديون " />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="مشاركة " />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="إرسال" />
+        </menu>
+    </item>
+
+</menu>
